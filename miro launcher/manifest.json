@@ -1,0 +1,25 @@
+{
+  "name": "Open in Miro App",
+  "description": "Converts the current miro.com page to miroapp:// when clicked.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Open in Miro Desktop"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://*.miro.com/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "icons": {
+    "16": "icons/miro_launch.png",
+    "32": "icons/miro_launch.png",
+    "48": "icons/miro_launch.png",
+    "128": "icons/miro_launch.png"
+  }
+}
